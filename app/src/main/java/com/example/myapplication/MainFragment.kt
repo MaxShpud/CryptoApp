@@ -2,20 +2,25 @@ package com.example.myapplication
 
 import android.os.Bundle
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
+import com.example.myapplication.base.BaseFragment
+import com.example.myapplication.databinding.MainFragmentBinding
 
-class MainFragment : Fragment() {
+class MainFragment : BaseFragment<MainFragmentBinding>() {
 
-    override fun onCreateView(
+    override fun createViewBinding(
         inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? = inflater.inflate(R.layout.main_fragment, container, false)
+        container: ViewGroup?
+    ): MainFragmentBinding = MainFragmentBinding.inflate(inflater, container, false)
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        //тут уже можно писать логику относительно UI элементов
+    override fun MainFragmentBinding.onBindView(savedInstanceState: Bundle?) {
+        textView.setOnClickListener {
+            navController.navigate(
+                MainFragmentDirections.navigateToAnotherFragment(
+                    123,
+                    "me favorite fragment"
+                )
+            )
+        }
     }
 }
