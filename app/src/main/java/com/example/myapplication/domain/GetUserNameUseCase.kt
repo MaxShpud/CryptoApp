@@ -2,10 +2,11 @@ package com.example.myapplication.domain
 
 import com.example.myapplication.domain.base.UseCase
 import com.example.myapplication.domain.models.UserName
+import com.example.myapplication.domain.repository.UserRepository
 
-class GetUserNameUseCase : UseCase<Unit, UserName> {
+class GetUserNameUseCase(private val userRepository: UserRepository) : UseCase<Unit, UserName> {
 
     override fun execute(param: Unit?): UserName {
-        return UserName("Egor","Gutko")
+        return userRepository.getUserName()
     }
 }
