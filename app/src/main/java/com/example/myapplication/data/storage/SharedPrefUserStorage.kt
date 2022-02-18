@@ -2,24 +2,24 @@ package com.example.myapplication.data.storage
 
 import android.content.Context
 import androidx.core.content.edit
-import com.example.myapplication.domain.models.UserName
-import com.example.myapplication.domain.models.UserNameParam
+import com.example.myapplication.data.storage.models.User
 
 class SharedPrefUserStorage(context: Context) : UserStorage {
 
     private val sharedPreferences =
         context.getSharedPreferences(SHARED_PREFS_NAME, Context.MODE_PRIVATE)
 
-    override fun saveUserParam(userParam: UserNameParam): Boolean {
-        sharedPreferences.edit { putString(FIRST_NAME_KEY, userParam.name) }
+    override fun saveUserParam(user: User): Boolean {
+        sharedPreferences.edit { putString(FIRST_NAME_KEY, user.firstName) }
+        sharedPreferences.edit { putString(SECOND_NAME_KEY, user.secondName) }
         return true
     }
 
-    override fun getUserName(): UserName {
-        val firstName = sharedPreferences.getString(FIRST_NAME_KEY, EMPTY_STRING) ?: EMPTY_STRING
+    override fun getUserName(): User {
+        val firstName = sharedPreferences.getString(FIRST_NAME_KEY, DEFAULT_VALUE) ?: DEFAULT_VALUE
         val secondName =
             sharedPreferences.getString(SECOND_NAME_KEY, DEFAULT_VALUE) ?: DEFAULT_VALUE
-        return UserName(
+        return User(
             firstName = firstName,
             secondName = secondName
         )
@@ -29,7 +29,6 @@ class SharedPrefUserStorage(context: Context) : UserStorage {
         private const val SHARED_PREFS_NAME = "SHARED_PREFS_NAME"
         private const val FIRST_NAME_KEY = "FIRST_NAME_KEY"
         private const val SECOND_NAME_KEY = "SECOND_NAME_KEY"
-        private const val EMPTY_STRING = ""
         private const val DEFAULT_VALUE = "default value"
     }
 }

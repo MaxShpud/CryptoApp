@@ -1,18 +1,28 @@
-package com.example.myapplication
+package com.example.myapplication.presentation
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import com.example.myapplication.base.BaseFragment
+import com.example.myapplication.presentation.base.BaseFragment
 import com.example.myapplication.data.UserRepositoryImpl
+import com.example.myapplication.data.converters.UserParamToUserConverter
+import com.example.myapplication.data.converters.UserToUserNameConverter
+import com.example.myapplication.data.storage.SharedPrefUserStorage
 import com.example.myapplication.databinding.MainFragmentBinding
-import com.example.myapplication.domain.GetUserNameUseCase
-import com.example.myapplication.domain.SaveUserNameUseCase
 import com.example.myapplication.domain.models.UserNameParam
+import com.example.myapplication.domain.repository.usecase.GetUserNameUseCase
+import com.example.myapplication.domain.repository.usecase.SaveUserNameUseCase
 
 class MainFragment : BaseFragment<MainFragmentBinding>() {
 
-    private val userRepository by lazy { UserRepositoryImpl(requireActivity().applicationContext) }
+    private val userStorage by lazy { SharedPrefUserStorage(requireActivity().applicationContext) }
+    private val userRepository by lazy {
+        UserRepositoryImpl(
+            userStorage,
+            UserParamToUserConverter(),
+            UserToUserNameConverter()
+        )
+    }
 
     private val getUserNameUseCase by lazy { GetUserNameUseCase(userRepository) }
     private val saveUserNameUseCase by lazy { SaveUserNameUseCase(userRepository) }

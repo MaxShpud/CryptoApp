@@ -1,10 +1,10 @@
-package com.example.myapplication
+package com.example.myapplication.presentation
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.navigation.fragment.navArgs
-import com.example.myapplication.base.BaseFragment
+import com.example.myapplication.presentation.base.BaseFragment
 import com.example.myapplication.databinding.AnotherFragmentBinding
 
 class AnotherFragment : BaseFragment<AnotherFragmentBinding>() {

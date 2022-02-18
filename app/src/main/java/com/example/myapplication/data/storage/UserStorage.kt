@@ -1,11 +1,10 @@
 package com.example.myapplication.data.storage
 
-import com.example.myapplication.domain.models.UserName
-import com.example.myapplication.domain.models.UserNameParam
+import com.example.myapplication.data.storage.models.User
 
 interface UserStorage {
 
-    fun saveUserParam(userParam: UserNameParam): Boolean
+    fun saveUserParam(user: User): Boolean
 
-    fun getUserName(): UserName
+    fun getUserName(): User
 }

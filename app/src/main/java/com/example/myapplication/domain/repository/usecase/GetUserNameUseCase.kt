@@ -1,4 +1,4 @@
-package com.example.myapplication.domain
+package com.example.myapplication.domain.repository.usecase
 
 import com.example.myapplication.domain.base.UseCase
 import com.example.myapplication.domain.models.UserName

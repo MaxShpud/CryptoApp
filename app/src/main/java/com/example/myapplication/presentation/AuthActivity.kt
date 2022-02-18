@@ -1,8 +1,9 @@
-package com.example.myapplication
+package com.example.myapplication.presentation
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.myapplication.R
 import com.google.android.material.textview.MaterialTextView
 
 class AuthActivity : AppCompatActivity() {
