@@ -1,4 +1,4 @@
-package com.example.myapplication.domain.base
+package com.example.domain.base
 
 interface UseCase<in INPUT, out OUTPUT> {
 

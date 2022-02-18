@@ -3,15 +3,15 @@ package com.example.myapplication.presentation
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import com.example.myapplication.presentation.base.BaseFragment
-import com.example.myapplication.data.UserRepositoryImpl
-import com.example.myapplication.data.converters.UserParamToUserConverter
-import com.example.myapplication.data.converters.UserToUserNameConverter
-import com.example.myapplication.data.storage.SharedPrefUserStorage
+import com.example.data.UserRepositoryImpl
+import com.example.data.storage.SharedPrefUserStorage
+import com.example.data.storage.converters.UserParamToUserConverter
+import com.example.data.storage.converters.UserToUserNameConverter
+import com.example.domain.models.UserNameParam
+import com.example.domain.repository.usecase.GetUserNameUseCase
+import com.example.domain.repository.usecase.SaveUserNameUseCase
 import com.example.myapplication.databinding.MainFragmentBinding
-import com.example.myapplication.domain.models.UserNameParam
-import com.example.myapplication.domain.repository.usecase.GetUserNameUseCase
-import com.example.myapplication.domain.repository.usecase.SaveUserNameUseCase
+import com.example.myapplication.presentation.base.BaseFragment
 
 class MainFragment : BaseFragment<MainFragmentBinding>() {
 

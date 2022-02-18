@@ -1,11 +1,11 @@
-package com.example.myapplication.data
+package com.example.data
 
-import com.example.myapplication.data.converters.UserParamToUserConverter
-import com.example.myapplication.data.converters.UserToUserNameConverter
-import com.example.myapplication.data.storage.UserStorage
-import com.example.myapplication.domain.models.UserName
-import com.example.myapplication.domain.models.UserNameParam
-import com.example.myapplication.domain.repository.UserRepository
+import com.example.data.storage.UserStorage
+import com.example.data.storage.converters.UserParamToUserConverter
+import com.example.data.storage.converters.UserToUserNameConverter
+import com.example.domain.models.UserName
+import com.example.domain.models.UserNameParam
+import com.example.domain.repository.UserRepository
 
 class UserRepositoryImpl(
     private val userStorage: UserStorage,

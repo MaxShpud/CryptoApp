@@ -1,8 +1,8 @@
-package com.example.myapplication.data.storage
+package com.example.data.storage
 
 import android.content.Context
 import androidx.core.content.edit
-import com.example.myapplication.data.storage.models.User
+import com.example.data.storage.models.User
 
 class SharedPrefUserStorage(context: Context) : UserStorage {
 
