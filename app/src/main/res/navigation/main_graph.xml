@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/main_fragment"
-        android:name="com.example.myapplication.presentation.MainFragment"
+        android:name="com.example.myapplication.presentation.main.MainFragment"
         android:label="MainFragment">
 
         <action

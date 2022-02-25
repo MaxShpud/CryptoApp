@@ -29,6 +29,9 @@ android {
 	}
 	kotlinOptions {
 		jvmTarget = '1.8'
+		freeCompilerArgs += [
+				"-Xjvm-default=all",
+		]
 	}
 
 	viewBinding{
@@ -49,6 +52,9 @@ dependencies {
 	//Navigation component
 	implementation "androidx.navigation:navigation-fragment-ktx:2.4.1"
 	implementation "androidx.navigation:navigation-ui-ktx:2.4.1"
+
+	//viewModel
+	implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.0-alpha02"
 
 	implementation project(path: ":domain")
 	implementation project(path: ":data")
