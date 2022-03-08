@@ -3,22 +3,13 @@ package com.example.myapplication.presentation.main
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.lifecycle.ViewModelProvider
 import com.example.myapplication.databinding.MainFragmentBinding
 import com.example.myapplication.presentation.base.BaseFragment
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class MainFragment : BaseFragment<MainFragmentBinding>() {
 
-    private lateinit var viewModel: MainFragmentViewModel
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-        viewModel = ViewModelProvider(
-            this,
-            MainViewModelFactory(requireActivity().applicationContext)
-        )[MainFragmentViewModel::class.java]
-    }
+    private val viewModel by viewModel<MainFragmentViewModel>()
 
     override fun createViewBinding(
         inflater: LayoutInflater,
