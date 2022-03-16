@@ -7,7 +7,7 @@ import com.example.domain.repository.UserRepository
 class SaveUserNameUseCase(private val userRepository: UserRepository) :
     UseCase<UserNameParam, Boolean> {
 
-    override fun execute(param: UserNameParam?): Boolean {
+    override suspend fun execute(param: UserNameParam?): Boolean {
         return userRepository.saveUserParam(param!!)
     }
 }

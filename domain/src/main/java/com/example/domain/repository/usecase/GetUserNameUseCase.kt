@@ -6,7 +6,7 @@ import com.example.domain.repository.UserRepository
 
 class GetUserNameUseCase(private val userRepository: UserRepository) : UseCase<Unit, UserName> {
 
-    override fun execute(param: Unit?): UserName {
+    override suspend fun execute(param: Unit?): UserName {
         return userRepository.getUserName()
     }
 }

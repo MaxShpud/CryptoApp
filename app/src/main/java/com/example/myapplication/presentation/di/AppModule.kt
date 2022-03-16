@@ -7,6 +7,6 @@ import org.koin.dsl.module
 val appModule = module {
 
     viewModel<MainFragmentViewModel> {
-        MainFragmentViewModel(get(), get())
+        MainFragmentViewModel(get(), get(),get())
     }
 }
