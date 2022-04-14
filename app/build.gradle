@@ -65,6 +65,10 @@ dependencies {
 	// Koin Test features
 	testImplementation "io.insert-koin:koin-test:$koin_version"
 
+	//rxjava3
+	implementation 'io.reactivex.rxjava3:rxandroid:3.0.0'
+	implementation 'io.reactivex.rxjava3:rxjava:3.0.0'
+
 	implementation project(path: ":domain")
 	implementation project(path: ":data")
 }

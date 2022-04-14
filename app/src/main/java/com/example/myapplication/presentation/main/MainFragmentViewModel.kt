@@ -22,7 +22,8 @@ class MainFragmentViewModel(
     init {
         println("MainFragmentViewModel created")
         viewModelScope.launch {
-            println(getCurrencyUseCase.execute())
+            println("getCurrencyUseCase.execute()")
+            println("___________________"+getCurrencyUseCase.execute())
         }
     }
 
