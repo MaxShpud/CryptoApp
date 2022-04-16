@@ -1,6 +1,7 @@
 package com.example.data
 
 import com.google.gson.Gson
+import hu.akarnokd.rxjava3.retrofit.RxJava3CallAdapterFactory
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -23,6 +24,7 @@ class RetrofitCreator {
             .baseUrl("https://api.privatbank.ua/")
             .client(createOkHttpClient())
             .addConverterFactory(GsonConverterFactory.create(gson))//преобразование json в объекты
+            .addCallAdapterFactory(RxJava3CallAdapterFactory.create())//чтобы обернуть в rx
             .build()
         return retrofit.create(serviceClass)
     }

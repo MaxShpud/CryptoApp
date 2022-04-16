@@ -43,5 +43,8 @@ dependencies {
 	// Gson
 	api "com.google.code.gson:gson:2.8.6"
 
+	//rxjava3
+	implementation 'com.github.akarnokd:rxjava3-retrofit-adapter:3.0.0'
+
 	implementation project(path: ":domain")
 }
