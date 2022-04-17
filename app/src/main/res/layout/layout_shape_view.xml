@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+	<com.google.android.material.imageview.ShapeableImageView
+		android:id="@+id/imageView"
+		android:layout_width="64dp"
+		android:layout_height="64dp"
+		android:background="@color/colorBlack50Opacity"
+		android:padding="@dimen/margin3dp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:strokeColor="@color/white"
+		app:strokeWidth="3dp" />
+
+	<TextView
+		android:id="@+id/comingSoonIndicator"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="@drawable/ic_ellipse"
+		android:backgroundTint="@color/blue"
+		android:paddingStart="@dimen/margin8dp"
+		android:paddingTop="@dimen/margin4dp"
+		android:paddingEnd="@dimen/margin8dp"
+		android:paddingBottom="@dimen/margin4dp"
+		android:rotation="-10"
+		android:text="example"
+		app:layout_constraintBottom_toBottomOf="@id/imageView"
+		app:layout_constraintEnd_toEndOf="@id/imageView"
+		app:layout_constraintStart_toStartOf="@id/imageView"
+		app:layout_constraintTop_toTopOf="@id/imageView" />
+
+	<TextView
+		android:id="@+id/title"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/margin4dp"
+		android:ellipsize="end"
+		android:gravity="center"
+		android:maxLines="1"
+		android:text="1000"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/imageView"
+		tools:text="20 000" />
+
+</merge>

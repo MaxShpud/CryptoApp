@@ -12,7 +12,7 @@ class SplashViewModel : ViewModel() {
 	val resultLiveData: LiveData<Any> = _resultLiveData
 
 	fun waitAndGoFurther() {
-		Observable.just(Any()).delay(7000, TimeUnit.MILLISECONDS).subscribe({
+		Observable.just(Any()).delay(1000, TimeUnit.MILLISECONDS).subscribe({
 			_resultLiveData.postValue(it)
 		}, {
 			print(it.message)
