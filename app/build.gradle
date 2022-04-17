@@ -50,11 +50,11 @@ dependencies {
 	androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
 	//Navigation component
-	implementation "androidx.navigation:navigation-fragment-ktx:2.4.1"
-	implementation "androidx.navigation:navigation-ui-ktx:2.4.1"
+	implementation "androidx.navigation:navigation-fragment-ktx:2.4.2"
+	implementation "androidx.navigation:navigation-ui-ktx:2.4.2"
 
 	//viewModel
-	implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.0-alpha04"
+	implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.0-alpha06"
 
 	//Koin
 	def koin_version = "3.2.0-beta-1"
