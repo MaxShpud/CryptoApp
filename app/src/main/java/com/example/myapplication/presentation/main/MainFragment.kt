@@ -9,24 +9,25 @@ import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class MainFragment : BaseFragment<MainFragmentBinding>() {
 
-    private val viewModel by viewModel<MainFragmentViewModel>()
+	private val viewModel by viewModel<MainFragmentViewModel>()
 
-    override fun createViewBinding(
-        inflater: LayoutInflater,
-        container: ViewGroup?
-    ): MainFragmentBinding = MainFragmentBinding.inflate(inflater, container, false)
+	override fun createViewBinding(
+		inflater: LayoutInflater,
+		container: ViewGroup?
+	): MainFragmentBinding = MainFragmentBinding.inflate(inflater, container, false)
 
-    override fun MainFragmentBinding.onBindView(savedInstanceState: Bundle?) {
-        receiveButton.setOnClickListener {
-            viewModel.load()
-        }
-        saveButton.setOnClickListener {
-            val userName = dataEdittext.text.toString()
-            viewModel.save(userName)
-        }
+	override fun MainFragmentBinding.onBindView(savedInstanceState: Bundle?) {
+		receiveButton.setOnClickListener {
+			viewModel.load()
+		}
+		saveButton.setOnClickListener {
+			val userName = dataEdittext.text.toString()
+			viewModel.save(userName)
+			navController.navigate(MainFragmentDirections.navigateToTwoButtonDialog("qqq"))
+		}
 
-        viewModel.resultLiveData.observe(viewLifecycleOwner) { message ->
-            dateTextview.text = message
-        }
-    }
+		viewModel.resultLiveData.observe(viewLifecycleOwner) { message ->
+			dateTextview.text = message
+		}
+	}
 }

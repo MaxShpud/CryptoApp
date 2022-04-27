@@ -8,4 +8,9 @@
 	<string name="save_data">SaveData</string>
 	<string name="splash_text">Splash</string>
 
+	<string name="dialog_title">Dialog Title</string>
+	<string name="dialog_subtitle">Dialog Subtitle</string>
+	<string name="cancel">Cancel</string>
+	<string name="admit">Admit</string>
+
 </resources>

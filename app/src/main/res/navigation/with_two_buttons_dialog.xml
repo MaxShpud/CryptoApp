@@ -1,0 +1,28 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/two_button_dialog"
+	app:startDestination="@id/two_button_dialog_fragment">
+
+	<!--<action
+		android:id="@+id/navigate_to_two_button_dialog"
+		app:destination="@+id/two_button_dialog" >
+
+		<argument
+			android:name="requester"
+			app:argType="string"
+			app:nullable="false" />
+
+	</action>-->
+
+	<dialog
+		android:id="@+id/two_button_dialog_fragment"
+		android:name="com.example.myapplication.presentation.dialogs.DialogWithTwoButtons">
+
+		<argument
+			android:name="requester"
+			app:argType="string"
+			app:nullable="false" />
+
+	</dialog>
+
+</navigation>

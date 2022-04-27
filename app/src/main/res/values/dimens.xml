@@ -9,4 +9,7 @@
 	<dimen name="margin6dp">6dp</dimen>
 	<dimen name="margin7dp">7dp</dimen>
 	<dimen name="margin8dp">8dp</dimen>
+	<dimen name="margin16dp">16dp</dimen>
+	<dimen name="margin24dp">24dp</dimen>
+	<dimen name="margin48dp">48dp</dimen>
 </resources>
