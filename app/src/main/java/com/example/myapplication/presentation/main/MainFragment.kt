@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import com.example.myapplication.databinding.MainFragmentBinding
 import com.example.myapplication.presentation.base.BaseFragment
+import com.example.myapplication.presentation.dialogs.DialogWithTwoButtons
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class MainFragment : BaseFragment<MainFragmentBinding>() {
@@ -17,17 +18,25 @@ class MainFragment : BaseFragment<MainFragmentBinding>() {
 	): MainFragmentBinding = MainFragmentBinding.inflate(inflater, container, false)
 
 	override fun MainFragmentBinding.onBindView(savedInstanceState: Bundle?) {
+		setResultListenerForDialogWithTwoButtons()
 		receiveButton.setOnClickListener {
 			viewModel.load()
 		}
 		saveButton.setOnClickListener {
 			val userName = dataEdittext.text.toString()
 			viewModel.save(userName)
-			navController.navigate(MainFragmentDirections.navigateToTwoButtonDialog("qqq"))
+			val requester = setResultListenerForDialogWithTwoButtons()
+			navController.navigate(MainFragmentDirections.navigateToTwoButtonDialog(requester))
 		}
 
 		viewModel.resultLiveData.observe(viewLifecycleOwner) { message ->
 			dateTextview.text = message
 		}
 	}
+
+	private fun setResultListenerForDialogWithTwoButtons() =
+		setResultListenerWithCheckRequester(DialogWithTwoButtons.REQUEST_KEY) {
+			println(it.getBoolean(DialogWithTwoButtons.RESULT_KEY))
+		}
+
 }

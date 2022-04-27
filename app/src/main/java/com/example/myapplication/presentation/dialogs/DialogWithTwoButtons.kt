@@ -3,10 +3,14 @@ package com.example.myapplication.presentation.dialogs
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.navigation.fragment.navArgs
 import com.example.myapplication.databinding.DialogWithTwoButtonsBinding
 import com.example.myapplication.presentation.base.BaseDialogFragment
 
 class DialogWithTwoButtons : BaseDialogFragment<DialogWithTwoButtonsBinding>() {
+
+	private val args: DialogWithTwoButtonsArgs by navArgs()
+
 	override fun createBinding(inflater: LayoutInflater, container: ViewGroup?): DialogWithTwoButtonsBinding =
 		DialogWithTwoButtonsBinding.inflate(inflater, container, false)
 
@@ -21,7 +25,7 @@ class DialogWithTwoButtons : BaseDialogFragment<DialogWithTwoButtonsBinding>() {
 	}
 
 	private fun setResult(isSuccess: Boolean) {
-		setFragmentResultWithRequester("", RESULT_KEY to isSuccess)
+		setFragmentResultWithRequester(args.requester, RESULT_KEY to isSuccess)
 	}
 
 	companion object {

@@ -5,56 +5,76 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.clearFragmentResult
+import androidx.fragment.app.clearFragmentResultListener
+import androidx.fragment.app.setFragmentResultListener
 import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
 import androidx.viewbinding.ViewBinding
 
 abstract class BaseFragment<VIEW_BINDING : ViewBinding> : Fragment() {
 
-    private var _binding: VIEW_BINDING? = null
+	private var _binding: VIEW_BINDING? = null
 
-    protected val binding: VIEW_BINDING
-        get() = _binding!!
+	protected val binding: VIEW_BINDING
+		get() = _binding!!
 
-    private var _navController: NavController? = null
+	private var _navController: NavController? = null
 
-    protected val navController: NavController
-        get() = _navController!!
+	protected val navController: NavController
+		get() = _navController!!
 
-    abstract fun createViewBinding(inflater: LayoutInflater, container: ViewGroup?): VIEW_BINDING
+	private var requester: String = "${this::class.qualifiedName!!}#${hashCode()}"
 
-    abstract fun VIEW_BINDING.onBindView(savedInstanceState: Bundle?)
+	abstract fun createViewBinding(inflater: LayoutInflater, container: ViewGroup?): VIEW_BINDING
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+	abstract fun VIEW_BINDING.onBindView(savedInstanceState: Bundle?)
 
-        _navController = findNavController()
-    }
+	override fun onCreate(savedInstanceState: Bundle?) {
+		super.onCreate(savedInstanceState)
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View = createViewBinding(inflater, container).run {
-        _binding = this
-        root
-    }
+		_navController = findNavController()
+	}
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
+	override fun onCreateView(
+		inflater: LayoutInflater,
+		container: ViewGroup?,
+		savedInstanceState: Bundle?
+	): View = createViewBinding(inflater, container).run {
+		_binding = this
+		root
+	}
 
-        binding.onBindView(savedInstanceState)
-    }
+	override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+		super.onViewCreated(view, savedInstanceState)
 
-    override fun onDestroyView() {
-        super.onDestroyView()
+		binding.onBindView(savedInstanceState)
+	}
 
-        _binding = null
-    }
+	open fun setResultListenerWithCheckRequester(
+		requestKey: String,
+		handleResult: (bundle: Bundle) -> Unit
+	): String {
+		val usedRequester = "$requestKey#$requester"
+		setFragmentResultListener(usedRequester) { providedRequestKey: String, bundle: Bundle ->
+			clearFragmentResult(providedRequestKey)
+			clearFragmentResultListener(providedRequestKey)
+			handleResult(bundle)
+		}
 
-    override fun onDestroy() {
-        super.onDestroy()
+		return usedRequester
+	}
 
-        _navController = null
-    }
+
+	override fun onDestroyView() {
+		super.onDestroyView()
+
+		_binding = null
+	}
+
+	override fun onDestroy() {
+		super.onDestroy()
+
+		_navController = null
+	}
 }
