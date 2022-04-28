@@ -18,14 +18,13 @@ class MainFragment : BaseFragment<MainFragmentBinding>() {
 	): MainFragmentBinding = MainFragmentBinding.inflate(inflater, container, false)
 
 	override fun MainFragmentBinding.onBindView(savedInstanceState: Bundle?) {
-		setResultListenerForDialogWithTwoButtons()
+		val requester = setResultListenerForDialogWithTwoButtons()
 		receiveButton.setOnClickListener {
 			viewModel.load()
 		}
 		saveButton.setOnClickListener {
 			val userName = dataEdittext.text.toString()
 			viewModel.save(userName)
-			val requester = setResultListenerForDialogWithTwoButtons()
 			navController.navigate(MainFragmentDirections.navigateToTwoButtonDialog(requester))
 		}
 
@@ -36,7 +35,7 @@ class MainFragment : BaseFragment<MainFragmentBinding>() {
 
 	private fun setResultListenerForDialogWithTwoButtons() =
 		setResultListenerWithCheckRequester(DialogWithTwoButtons.REQUEST_KEY) {
-			println(it.getBoolean(DialogWithTwoButtons.RESULT_KEY))
+			println("______________"+it.getBoolean(DialogWithTwoButtons.RESULT_KEY))
 		}
 
 }

@@ -84,20 +84,6 @@ abstract class BaseDialogFragment<T : ViewBinding>(
 		super.onDestroy()
 	}
 
-	protected fun setResultListenerWithCheckRequester(
-		requestKey: String,
-		handleResult: (bundle: Bundle) -> Unit
-	): String {
-		val usedRequester = "$requestKey#$requester"
-		setFragmentResultListener(usedRequester) { providedRequestKey: String, bundle: Bundle ->
-			clearFragmentResult(providedRequestKey)
-			clearFragmentResultListener(providedRequestKey)
-			handleResult(bundle)
-		}
-
-		return usedRequester
-	}
-
 	fun setFragmentResultWithRequester(
 		requester: String,
 		vararg bundleInfo: Pair<String, Any?>
