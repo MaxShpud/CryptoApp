@@ -9,10 +9,7 @@ import androidx.annotation.StyleRes
 import androidx.appcompat.app.AppCompatDialogFragment
 import androidx.core.os.bundleOf
 import androidx.core.view.WindowCompat
-import androidx.fragment.app.clearFragmentResult
-import androidx.fragment.app.clearFragmentResultListener
 import androidx.fragment.app.setFragmentResult
-import androidx.fragment.app.setFragmentResultListener
 import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
 import androidx.viewbinding.ViewBinding
@@ -62,7 +59,7 @@ abstract class BaseDialogFragment<T : ViewBinding>(
 
 		dialog?.window!!.apply {
 			WindowCompat.setDecorFitsSystemWindows(this, false)
-			setBackgroundDrawableResource(R.color.black)
+			setBackgroundDrawableResource(R.color.blue)
 		}
 		binding.onBindView(savedInstanceState)
 	}
