@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_home"
+    android:orientation="horizontal">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin40dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="@string/Home"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/logo_home"
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="@dimen/margin32dp"
+        android:background="@drawable/text_screen_first_word_of_name"
+        app:layout_constraintStart_toStartOf="@id/text_home"
+        app:layout_constraintTop_toBottomOf="@id/text_home" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/name_letter"
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="@string/S"
+        android:textSize="@dimen/text_size144sp"
+        app:layout_constraintStart_toStartOf="@id/logo_home"
+        app:layout_constraintTop_toTopOf="@id/logo_home" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/login_acc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin20dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="shpudeyko.02@gmail.com"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size20sp"
+        app:layout_constraintStart_toStartOf="@id/text_home"
+        app:layout_constraintTop_toBottomOf="@id/logo_home" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_cards"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin20dp"
+        android:layout_marginTop="@dimen/margin48dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/Cards"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size24sp"
+        app:layout_constraintStart_toStartOf="@id/login_acc"
+        app:layout_constraintTop_toBottomOf="@id/login_acc" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_home"
+        android:layout_width="335dp"
+        android:layout_height="206dp"
+        android:layout_marginStart="@dimen/margin20dp"
+        android:layout_marginTop="@dimen/margin16dp"
+        app:cardCornerRadius="@dimen/margin16dp"
+        app:layout_constraintStart_toStartOf="@id/text_cards"
+        app:layout_constraintTop_toBottomOf="@id/text_cards">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bankcard_backgroud">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/chip_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="29dp"
+                android:layout_marginTop="29dp"
+                android:src="@drawable/chip_picture"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/visa_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="164dp"
+                android:src="@drawable/visa_picture"
+                app:layout_constraintStart_toEndOf="@id/chip_image"
+                app:layout_constraintTop_toTopOf="@id/chip_image" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/number_of_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin32dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="4556 3325 8590 3732"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size20sp"
+                app:layout_constraintStart_toStartOf="@id/chip_image"
+                app:layout_constraintTop_toBottomOf="@id/chip_image" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/owner_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin16dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/Owner_Name"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size12sp"
+                app:layout_constraintStart_toStartOf="@id/number_of_card"
+                app:layout_constraintTop_toBottomOf="@id/number_of_card" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/expiry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin40dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/Expiry"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size12sp"
+                app:layout_constraintStart_toEndOf="@id/owner_name"
+                app:layout_constraintTop_toTopOf="@id/owner_name" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/CVV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin90dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/CVV"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size12sp"
+                app:layout_constraintStart_toEndOf="@id/expiry"
+                app:layout_constraintTop_toTopOf="@id/expiry" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/personal_owner_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="Maxim"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size20sp"
+                app:layout_constraintStart_toStartOf="@id/owner_name"
+                app:layout_constraintTop_toBottomOf="@id/owner_name" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/personal_expity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="11/24"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size20sp"
+                app:layout_constraintStart_toStartOf="@id/expiry"
+                app:layout_constraintTop_toBottomOf="@id/expiry" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/personal_CVV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="057"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size20sp"
+                app:layout_constraintStart_toStartOf="@id/CVV"
+                app:layout_constraintTop_toBottomOf="@id/CVV" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

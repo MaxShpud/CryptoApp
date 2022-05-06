@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/homeScreenFragment"
+        android:background="#00FFFFFF"
+        android:icon="@drawable/button_home"
+        android:title="@string/Home"/>
+    <item
+        android:id="@+id/walletScreenFragment"
+        android:icon="@drawable/button_wallet"
+        android:title="@string/Wallet"/>
+    <item
+        android:id="@+id/exchangerScreenFragment"
+        android:icon="@drawable/button_exchanger"
+        android:title="@string/Exchanger"/>
+    <item
+        android:id="@+id/chatScreenFragment"
+        android:icon="@drawable/button_message"
+        android:title="@string/Chat"/>
+    <item
+        android:id="@+id/settingsScreenFragment"
+        android:icon="@drawable/button_setting"
+        android:title="@string/Settings"/>
+
+</menu>

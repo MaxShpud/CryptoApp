@@ -1,0 +1,36 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"  android:name="chip"
+    android:viewportWidth="43"
+    android:viewportHeight="36"
+    android:width="43dp"
+    android:height="36dp">
+    <path
+        android:pathData="M27.4609 12.4064H34.9049V16.5419H27.4609V12.4064Z"
+        android:fillColor="#F0ECE4" />
+    <path
+        android:pathData="M7.44531 19.0236H14.8893V23.1591H7.44531V19.0236Z"
+        android:fillColor="#F0ECE4" />
+    <path
+        android:pathData="M7.44531 12.4064H14.8893V16.5419H7.44531V12.4064Z"
+        android:fillColor="#F0ECE4" />
+    <path
+        android:pathData="M17.3672 14.0607H24.9766V21.5046H17.3672V14.0607Z"
+        android:fillColor="#F0ECE4" />
+    <path
+        android:pathData="M27.4609 19.0236H34.9049V23.1591H27.4609V19.0236Z"
+        android:fillColor="#F0ECE4" />
+    <path
+        android:pathData="M16.1299 9.92542C16.8151 9.92542 17.3706 10.4809 17.3706 11.1661V11.5796H19.9346V8.68475C19.9346 8.35565 20.0653 8.04011 20.2981 7.80752L20.6615 7.44409H7.44531V9.92542H16.1299Z"
+        android:fillColor="#F0ECE4" />
+    <path
+        android:pathData="M22.4141 9.19864V11.5796H24.9781V11.1661C24.9781 10.4809 25.5336 9.92542 26.2188 9.92542H34.9034V7.44409H24.1686L22.4141 9.19864Z"
+        android:fillColor="#F0ECE4" />
+    <path
+        android:pathData="M26.219 25.6405C25.5338 25.6405 24.9783 25.0851 24.9783 24.3999V23.9863H22.4143V26.8812C22.4143 27.2103 22.2836 27.5259 22.0508 27.7584L21.6875 28.1219H34.9036V25.6405H26.219Z"
+        android:fillColor="#F0ECE4" />
+    <path
+        android:pathData="M19.9346 26.3673V23.9863H17.3706V24.3999C17.3706 25.0851 16.8151 25.6405 16.1299 25.6405H7.44531V28.1219H18.1801L19.9346 26.3673Z"
+        android:fillColor="#F0ECE4" />
+    <path
+        android:pathData="M36.1446 0H6.20331C2.7828 0 0 2.7828 0 6.20331V29.3623C0 32.7828 2.7828 35.5656 6.20331 35.5656H36.1446C39.5651 35.5656 42.3479 32.7828 42.3479 29.3623V6.20331C42.3479 2.7828 39.5651 0 36.1446 0ZM37.3853 29.3623C37.3853 30.0475 36.8298 30.603 36.1446 30.603H6.20331C5.51813 30.603 4.96265 30.0475 4.96265 29.3623V6.20331C4.96265 5.51813 5.51813 4.96265 6.20331 4.96265H36.1446C36.8298 4.96265 37.3853 5.51813 37.3853 6.20331V29.3623Z"
+        android:fillColor="#F0ECE4" />
+</vector>
