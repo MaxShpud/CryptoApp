@@ -1,5 +1,21 @@
 <resources>
 
+	<string name="S">S</string>
+	<string name="Owner_Name">Owner Name</string>
+	<string name="Cards">Cards</string>
+	<string name="Expiry">Expiry</string>
+	<string name="CVV">CVV</string>
+	<string name="ethereum">Ethereum</string>
+	<string name="cardano">Cardano</string>
+	<string name="ada">ADA</string>
+
+	<string name="Home">Home</string>
+	<string name="Wallet">Wallet</string>
+	<string name="Exchanger">Exchanger</string>
+	<string name="Chat">Chat</string>
+	<string name="Settings">Settings</string>
+
+
 	<string name="app_name">My Application</string>
 
 	<string name="no_data">No data</string>

@@ -8,4 +8,9 @@
 		</attr>
 	</declare-styleable>
 
+	<declare-styleable name="PageIndicatorView">
+
+		<attr name="piv_count" format="integer"/>
+	</declare-styleable>
+
 </resources>
