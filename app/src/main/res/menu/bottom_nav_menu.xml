@@ -4,7 +4,6 @@
 
     <item
         android:id="@+id/homeScreenFragment"
-        android:background="#00FFFFFF"
         android:icon="@drawable/button_home"
         android:title="@string/Home"/>
     <item

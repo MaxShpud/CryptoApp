@@ -81,6 +81,7 @@
         app:layout_constraintTop_toBottomOf="@id/text_cards">
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutWithCard"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/bankcard_backgroud">
