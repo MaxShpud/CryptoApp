@@ -20,7 +20,9 @@
         <entry key="..\:/Users/Work/AndroidStudioProjects/testone/app/src/main/res/layout/main_fragment.xml" value="0.25" />
         <entry key="..\:/Users/Work/AndroidStudioProjects/testone/app/src/main/res/layout/splash_activity.xml" value="0.1" />
         <entry key="..\:/Users/Work/AndroidStudioProjects/testone/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.243" />
+        <entry key="..\:/Users/Xiaomi/AndroidStudioProjects/cryptoProject/app/src/main/res/drawable/background_echanger.xml" value="0.1" />
         <entry key="..\:/Users/Xiaomi/AndroidStudioProjects/cryptoProject/app/src/main/res/drawable/background_home.xml" value="0.1" />
+        <entry key="..\:/Users/Xiaomi/AndroidStudioProjects/cryptoProject/app/src/main/res/drawable/bankcard_backgroud.xml" value="0.1" />
         <entry key="..\:/Users/Xiaomi/AndroidStudioProjects/cryptoProject/app/src/main/res/drawable/bg_rectangle.xml" value="0.1" />
         <entry key="..\:/Users/Xiaomi/AndroidStudioProjects/cryptoProject/app/src/main/res/drawable/button_exchanger.xml" value="0.1" />
         <entry key="..\:/Users/Xiaomi/AndroidStudioProjects/cryptoProject/app/src/main/res/drawable/button_home.xml" value="0.1" />
@@ -34,11 +36,13 @@
         <entry key="..\:/Users/Xiaomi/AndroidStudioProjects/cryptoProject/app/src/main/res/drawable/ethereum_picture.xml" value="0.1" />
         <entry key="..\:/Users/Xiaomi/AndroidStudioProjects/cryptoProject/app/src/main/res/drawable/ic_ellipse.xml" value="0.1" />
         <entry key="..\:/Users/Xiaomi/AndroidStudioProjects/cryptoProject/app/src/main/res/drawable/rounding_card.xml" value="0.1" />
+        <entry key="..\:/Users/Xiaomi/AndroidStudioProjects/cryptoProject/app/src/main/res/drawable/text_screen_first_word_of_name.xml" value="0.1" />
+        <entry key="..\:/Users/Xiaomi/AndroidStudioProjects/cryptoProject/app/src/main/res/drawable/token_ethereum.xml" value="0.1" />
         <entry key="..\:/Users/Xiaomi/AndroidStudioProjects/cryptoProject/app/src/main/res/drawable/visa_picture.xml" value="0.1" />
         <entry key="..\:/Users/Xiaomi/AndroidStudioProjects/cryptoProject/app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/Xiaomi/AndroidStudioProjects/cryptoProject/app/src/main/res/layout/another_fragment.xml" value="0.1796875" />
         <entry key="..\:/Users/Xiaomi/AndroidStudioProjects/cryptoProject/app/src/main/res/layout/chat_screen_fragment.xml" value="0.1" />
-        <entry key="..\:/Users/Xiaomi/AndroidStudioProjects/cryptoProject/app/src/main/res/layout/exchanger_screen_fragment.xml" value="0.12760416666666666" />
+        <entry key="..\:/Users/Xiaomi/AndroidStudioProjects/cryptoProject/app/src/main/res/layout/exchanger_screen_fragment.xml" value="0.32727272727272727" />
         <entry key="..\:/Users/Xiaomi/AndroidStudioProjects/cryptoProject/app/src/main/res/layout/home_screen_fragment.xml" value="0.1796875" />
         <entry key="..\:/Users/Xiaomi/AndroidStudioProjects/cryptoProject/app/src/main/res/layout/layout_cryptocard_view.xml" value="0.35368956743002544" />
         <entry key="..\:/Users/Xiaomi/AndroidStudioProjects/cryptoProject/app/src/main/res/layout/layout_shape_view.xml" value="0.1796875" />
