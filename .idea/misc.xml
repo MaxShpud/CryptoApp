@@ -16,6 +16,7 @@
         <entry key="..\:/AndroidStudio/AndroidStudioProjects/cryptoProject/app/src/main/res/drawable/button_setting.xml" value="0.1" />
         <entry key="..\:/AndroidStudio/AndroidStudioProjects/cryptoProject/app/src/main/res/drawable/button_wallet.xml" value="0.1" />
         <entry key="..\:/AndroidStudio/AndroidStudioProjects/cryptoProject/app/src/main/res/drawable/cardano_picture.xml" value="0.1" />
+        <entry key="..\:/AndroidStudio/AndroidStudioProjects/cryptoProject/app/src/main/res/drawable/changing_color_in_menu.xml" value="0.1265" />
         <entry key="..\:/AndroidStudio/AndroidStudioProjects/cryptoProject/app/src/main/res/drawable/chip_picture.xml" value="0.1" />
         <entry key="..\:/AndroidStudio/AndroidStudioProjects/cryptoProject/app/src/main/res/drawable/crypto_background.xml" value="0.1" />
         <entry key="..\:/AndroidStudio/AndroidStudioProjects/cryptoProject/app/src/main/res/drawable/cryptocard_background.xml" value="0.1" />
@@ -24,14 +25,22 @@
         <entry key="..\:/AndroidStudio/AndroidStudioProjects/cryptoProject/app/src/main/res/drawable/ic_back_stack.xml" value="0.1265" />
         <entry key="..\:/AndroidStudio/AndroidStudioProjects/cryptoProject/app/src/main/res/drawable/ic_caret_down.xml" value="0.1" />
         <entry key="..\:/AndroidStudio/AndroidStudioProjects/cryptoProject/app/src/main/res/drawable/ic_caret_up.xml" value="0.1" />
+        <entry key="..\:/AndroidStudio/AndroidStudioProjects/cryptoProject/app/src/main/res/drawable/ic_exchanger.xml" value="0.1265" />
+        <entry key="..\:/AndroidStudio/AndroidStudioProjects/cryptoProject/app/src/main/res/drawable/ic_home.xml" value="0.1265" />
+        <entry key="..\:/AndroidStudio/AndroidStudioProjects/cryptoProject/app/src/main/res/drawable/ic_home_true.xml" value="0.1265" />
         <entry key="..\:/AndroidStudio/AndroidStudioProjects/cryptoProject/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/AndroidStudio/AndroidStudioProjects/cryptoProject/app/src/main/res/drawable/ic_magnifier.xml" value="0.1265" />
+        <entry key="..\:/AndroidStudio/AndroidStudioProjects/cryptoProject/app/src/main/res/drawable/ic_message.xml" value="0.1265" />
+        <entry key="..\:/AndroidStudio/AndroidStudioProjects/cryptoProject/app/src/main/res/drawable/ic_setting.xml" value="0.1265" />
         <entry key="..\:/AndroidStudio/AndroidStudioProjects/cryptoProject/app/src/main/res/drawable/ic_star.xml" value="0.1265" />
         <entry key="..\:/AndroidStudio/AndroidStudioProjects/cryptoProject/app/src/main/res/drawable/ic_star_outline.xml" value="0.1265" />
+        <entry key="..\:/AndroidStudio/AndroidStudioProjects/cryptoProject/app/src/main/res/drawable/ic_wallet.xml" value="0.1" />
         <entry key="..\:/AndroidStudio/AndroidStudioProjects/cryptoProject/app/src/main/res/drawable/mastercard_icon.xml" value="0.1" />
         <entry key="..\:/AndroidStudio/AndroidStudioProjects/cryptoProject/app/src/main/res/drawable/rounding_card.xml" value="0.1" />
         <entry key="..\:/AndroidStudio/AndroidStudioProjects/cryptoProject/app/src/main/res/drawable/savault_picture.xml" value="0.1" />
+        <entry key="..\:/AndroidStudio/AndroidStudioProjects/cryptoProject/app/src/main/res/drawable/selector.xml" value="0.1265" />
         <entry key="..\:/AndroidStudio/AndroidStudioProjects/cryptoProject/app/src/main/res/drawable/token_ethereum.xml" value="0.1" />
-        <entry key="..\:/AndroidStudio/AndroidStudioProjects/cryptoProject/app/src/main/res/layout/activity_main.xml" value="0.16893115942028986" />
+        <entry key="..\:/AndroidStudio/AndroidStudioProjects/cryptoProject/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/AndroidStudio/AndroidStudioProjects/cryptoProject/app/src/main/res/layout/activity_sign_in.xml" value="0.16893115942028986" />
         <entry key="..\:/AndroidStudio/AndroidStudioProjects/cryptoProject/app/src/main/res/layout/activity_sign_up.xml" value="0.16893115942028986" />
         <entry key="..\:/AndroidStudio/AndroidStudioProjects/cryptoProject/app/src/main/res/layout/card_items.xml" value="0.22" />
@@ -47,7 +56,7 @@
         <entry key="..\:/AndroidStudio/AndroidStudioProjects/cryptoProject/app/src/main/res/layout/home_screen_fragment.xml" value="0.16666666666666666" />
         <entry key="..\:/AndroidStudio/AndroidStudioProjects/cryptoProject/app/src/main/res/layout/settings_screen_fragment.xml" value="0.16893115942028986" />
         <entry key="..\:/AndroidStudio/AndroidStudioProjects/cryptoProject/app/src/main/res/layout/splash_activity.xml" value="0.1796875" />
-        <entry key="..\:/AndroidStudio/AndroidStudioProjects/cryptoProject/app/src/main/res/layout/wallet_screen_fragment.xml" value="0.22" />
+        <entry key="..\:/AndroidStudio/AndroidStudioProjects/cryptoProject/app/src/main/res/layout/wallet_screen_fragment.xml" value="0.16666666666666666" />
         <entry key="..\:/AndroidStudio/AndroidStudioProjects/cryptoProject/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1796875" />
         <entry key="..\:/AndroidStudio/AndroidStudioProjects/cryptoProject/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
         <entry key="..\:/Users/Egor/AndroidStudioProjects/test1/testone/app/src/main/res/drawable/checkbox_selector.xml" value="0.2355" />
